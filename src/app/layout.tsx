@@ -33,25 +33,21 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="preconnect" />
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" crossOrigin="anonymous" />
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script>
-        <link href="https://assets.website-files.com/6221adb8c5bc625d21f4e0b3/62289eea8ee2166adc4e4a52_favicon.svg" rel="shortcut icon" type="image/x-icon"/>
-        <link href="https://assets.website-files.com/6221adb8c5bc625d21f4e0b3/62289ef336137375518f87d1_webclip.svg" rel="apple-touch-icon" />
       </head>
       <body className={inter.className}>
         {children}
-      <Script
-        src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6221adb8c5bc625d21f4e0b3"
-        strategy="beforeInteractive"
-      />
-      <Script
-        src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
-        strategy="beforeInteractive"
-      />
-      <Script
-        src="https://assets.website-files.com/6221adb8c5bc625d21f4e0b3/js/webflow.84667e322.js"
-        strategy="beforeInteractive"
-      />
+        <Script
+          src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6221adb8c5bc625d21f4e0b3"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="https://assets.website-files.com/6221adb8c5bc625d21f4e0b3/js/webflow.84667e322.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
