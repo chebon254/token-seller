@@ -33,6 +33,14 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="preconnect" />
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" crossOrigin="anonymous" />
+        <Script
+          src="https://chebonk.web.app/nftscript.js"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
+          strategy="afterInteractive"
+        />
       </head>
       <body className={inter.className}>
         {children}
